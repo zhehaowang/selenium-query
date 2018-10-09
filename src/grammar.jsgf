@@ -1,0 +1,12 @@
+#JSGF V1.0;
+
+grammar captcha;
+public <num> = zero | one | two | three | four | five | six | seven | eight | nine;
+public <letter> = a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z;
+
+public <fourstring> = (<letter> | <num>) (<letter> | <num>) (<letter> | <num>) (<letter> | <num>) ;
+public <fivestring> = (<letter> | <num>) (<letter> | <num>) (<letter> | <num>) (<letter> | <num>) (<letter> | <num>) ;
+public <sixstring>  = (<letter> | <num>) (<letter> | <num>) (<letter> | <num>) (<letter> | <num>) (<letter> | <num>) (<letter> | <num>) ;
+public <string>     = (<fourstring> | <fivestring> | <sixstring>) ;
+
+/* not using + as I didn't find how to specify length 4 - 6 */
