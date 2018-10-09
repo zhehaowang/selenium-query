@@ -1,2 +1,5 @@
 # selenium-query
-Browser testing using Selenium
+
+### Dependency
+* selenium, PocketSphinx (pip)
+* chromedriver (brew)
